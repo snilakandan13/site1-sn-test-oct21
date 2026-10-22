@@ -91,6 +91,7 @@ jobs:
       SFCC_SHORTCODE: ${{ vars.SFCC_SHORTCODE }}
       SFCC_TENANT_ID: ${{ vars.SFCC_TENANT_ID }}
       SFCC_ACCOUNT_MANAGER_HOST: ${{ vars.SFCC_ACCOUNT_MANAGER_HOST }}
+      SFCC_EXTRA_HEADERS: '{"x-sfdc-mrt-trace-id":"ecom-manual"}'
 
     steps:
       - name: Check required configuration
